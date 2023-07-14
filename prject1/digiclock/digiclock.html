@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<title>digital clock</title>
+
+<head>
+	<style type="text/css">
+		FORM {
+			background-color: yellowgreen;
+		}
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DIGITAL CLOCK</title>
+</head>
+
+<body bgcolor="Beige">
+	<script type="text/javascript">
+		function func() {
+			mydate = new Date()
+			h = mydate.getHours()
+			m = mydate.getMinutes()
+			s = mydate.getSeconds()
+			document.F.H.value = h
+			document.F.M.value = m
+			document.F.S.value = s
+		}
+
+		window.setInterval("func()", 1000)
+	</script>
+
+	<marquee>
+		<h1 align="center">DIGITAL CLOCK</h1>
+	</marquee><BR><BR>
+	<center>
+
+		<FORM name="F">
+			<input type="TEXT" name="H" size="1">
+			<input type="TEXT" name="M" size="1">
+			<input type="TEXT" name="S" size="1">
+		</FORM>
+
+	</center>
+	<a href="file:///C:/Users/HP/Desktop/sublim/html%20document/MUNA.HTML">GO TO HOME</a>
+	<a href="file:///C:/Users/HP/Desktop/sublim/html%20document/calculeter.html">NEXT PAGE</a>
+</body>
+
+</html>
